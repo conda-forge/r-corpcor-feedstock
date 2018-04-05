@@ -3,11 +3,11 @@ About r-corpcor
 
 Home: http://strimmerlab.org/software/corpcor/
 
-Package license: GPL (>= 2)
+Package license: GPL (>= 3)
 
 Feedstock license: BSD 3-Clause
 
-Summary: Efficient Estimation of Covariance and (Partial) Correlation
+Summary: Implements a James-Stein-type shrinkage estimator for  the covariance matrix, with separate shrinkage for variances and correlations.   The details of the method are explained in Schafer and Strimmer (2005) <doi:10.2202/1544-6115.1175> and Opgen-Rhein and Strimmer (2007) <doi:10.2202/1544-6115.1252>. The approach is both computationally as well as statistically very efficient, it is applicable to "small n, large p" data, and always returns a positive definite and well-conditioned covariance matrix. In addition to inferring the covariance matrix the package also provides shrinkage estimators for partial correlations and partial variances. The inverse of the covariance and correlation matrix can be efficiently computed, as well as any arbitrary power of the shrinkage correlation matrix. Furthermore, functions are available for fast singular value decomposition, for computing the pseudoinverse, and for checking the rank and positive definiteness of a matrix.
 
 
 
@@ -66,6 +66,7 @@ To manage the continuous integration and simplify feedstock maintenance
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
+For more information please check the [conda-forge documentation](https://conda-forge.org/docs/).
 
 Terminology
 ===========
