@@ -7,21 +7,23 @@ Package license: GPL (>= 3)
 
 Feedstock license: BSD 3-Clause
 
-Summary: Implements a James-Stein-type shrinkage estimator for  the covariance matrix, with separate shrinkage for variances and correlations.   The details of the method are explained in Schafer and Strimmer (2005) <doi:10.2202/1544-6115.1175> and Opgen-Rhein and Strimmer (2007) <doi:10.2202/1544-6115.1252>. The approach is both computationally as well as statistically very efficient, it is applicable to "small n, large p" data, and always returns a positive definite and well-conditioned covariance matrix. In addition to inferring the covariance matrix the package also provides shrinkage estimators for partial correlations and partial variances. The inverse of the covariance and correlation matrix can be efficiently computed, as well as any arbitrary power of the shrinkage correlation matrix. Furthermore, functions are available for fast singular value decomposition, for computing the pseudoinverse, and for checking the rank and positive definiteness of a matrix.
+Summary: Implements a James-Stein-type shrinkage estimator for  the covariance matrix, with separate shrinkage for variances and correlations.   The details of the method are explained in Schafer and Strimmer (2005)  <DOI:10.2202/1544-6115.1175> and Opgen-Rhein and Strimmer (2007)  <DOI:10.2202/1544-6115.1252>.  The approach is both computationally as well as statistically very efficient, it is applicable to "small n, large p" data,  and always returns a positive definite and well-conditioned covariance matrix.   In addition to inferring the covariance matrix the package also provides  shrinkage estimators for partial correlations and partial variances.   The inverse of the covariance and correlation matrix  can be efficiently computed, as well as any arbitrary power of the  shrinkage correlation matrix.  Furthermore, functions are available for fast  singular value decomposition, for computing the pseudoinverse, and for  checking the rank and positive definiteness of a matrix.
 
 
 
 Current build status
 ====================
 
-Linux: [![Circle CI](https://circleci.com/gh/conda-forge/r-corpcor-feedstock.svg?style=shield)](https://circleci.com/gh/conda-forge/r-corpcor-feedstock)
-OSX: [![TravisCI](https://travis-ci.org/conda-forge/r-corpcor-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/r-corpcor-feedstock)
-Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/r-corpcor-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/r-corpcor-feedstock/branch/master)
+[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-corpcor-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-corpcor-feedstock)
+[![OSX](https://img.shields.io/travis/conda-forge/r-corpcor-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-corpcor-feedstock)
+[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-corpcor-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-corpcor-feedstock/branch/master)
 
 Current release info
 ====================
-Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-corpcor/badges/version.svg)](https://anaconda.org/conda-forge/r-corpcor)
-Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/r-corpcor/badges/downloads.svg)](https://anaconda.org/conda-forge/r-corpcor)
+
+| Name | Downloads | Version | Platforms |
+| --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-r--corpcor-green.svg)](https://anaconda.org/conda-forge/r-corpcor) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/r-corpcor.svg)](https://anaconda.org/conda-forge/r-corpcor) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/r-corpcor.svg)](https://anaconda.org/conda-forge/r-corpcor) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/r-corpcor.svg)](https://anaconda.org/conda-forge/r-corpcor) |
 
 Installing r-corpcor
 ====================
@@ -56,13 +58,13 @@ for each of the installable packages. Such a repository is known as a *feedstock
 A feedstock is made up of a conda recipe (the instructions on what and how to build
 the package) and the necessary configurations for automatic building using freely
 available continuous integration services. Thanks to the awesome service provided by
-[CircleCI](https://circleci.com/), [AppVeyor](http://www.appveyor.com/)
+[CircleCI](https://circleci.com/), [AppVeyor](https://www.appveyor.com/)
 and [TravisCI](https://travis-ci.org/) it is possible to build and upload installable
 packages to the [conda-forge](https://anaconda.org/conda-forge)
-[Anaconda-Cloud](http://docs.anaconda.org/) channel for Linux, Windows and OSX respectively.
+[Anaconda-Cloud](https://anaconda.org/) channel for Linux, Windows and OSX respectively.
 
 To manage the continuous integration and simplify feedstock maintenance
-[conda-smithy](http://github.com/conda-forge/conda-smithy) has been developed.
+[conda-smithy](https://github.com/conda-forge/conda-smithy) has been developed.
 Using the ``conda-forge.yml`` within this repository, it is possible to re-render all of
 this feedstock's supporting files (e.g. the CI configuration files) with ``conda smithy rerender``.
 
@@ -98,7 +100,7 @@ build distinct package versions.
 
 In order to produce a uniquely identifiable distribution:
  * If the version of a package **is not** being increased, please add or increase
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string).
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string).
  * If the version of a package **is** being increased, please remember to return
-   the [``build/number``](http://conda.pydata.org/docs/building/meta-yaml.html#build-number-and-string)
+   the [``build/number``](https://conda.io/docs/user-guide/tasks/build-packages/define-metadata.html#build-number-and-string)
    back to 0.
