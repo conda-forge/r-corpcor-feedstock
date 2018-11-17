@@ -14,9 +14,9 @@ source:
   sha256: 2e4fabd1d3936fecea67fa365233590147ca50bb45cf80efb53a10345a8a23c2
 
 build:
+  noarch: generic
   merge_build_host: True  # [win]
-  number: 1
-  skip: true  # [win32]
+  number: 1001
   rpaths:
     - lib/R/lib/
     - lib/
@@ -50,8 +50,7 @@ about:
     for fast  singular value decomposition, for computing the pseudoinverse, and for  checking
     the rank and positive definiteness of a matrix.
   license_family: GPL3
-  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'  # [unix]
-  license_file: '{{ environ["PREFIX"] }}\R\share\licenses\GPL-3'  # [win]
+  license_file: '{{ environ["PREFIX"] }}/lib/R/share/licenses/GPL-3'
 
 extra:
   recipe-maintainers:
