@@ -14,9 +14,8 @@ Summary: Implements a James-Stein-type shrinkage estimator for  the covariance m
 Current build status
 ====================
 
-[![Linux](https://img.shields.io/circleci/project/github/conda-forge/r-corpcor-feedstock/master.svg?label=Linux)](https://circleci.com/gh/conda-forge/r-corpcor-feedstock)
-[![OSX](https://img.shields.io/travis/conda-forge/r-corpcor-feedstock/master.svg?label=macOS)](https://travis-ci.org/conda-forge/r-corpcor-feedstock)
-[![Windows](https://img.shields.io/appveyor/ci/conda-forge/r-corpcor-feedstock/master.svg?label=Windows)](https://ci.appveyor.com/project/conda-forge/r-corpcor-feedstock/branch/master)
+All platforms:
+[![noarch](https://img.shields.io/circleci/project/github/conda-forge/r-corpcor-feedstock/master.svg?label=noarch)](https://circleci.com/gh/conda-forge/r-corpcor-feedstock)
 
 Current release info
 ====================
