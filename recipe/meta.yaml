@@ -1,6 +1,5 @@
 {% set version = "1.6.10" %}
 {% set posix = 'm2-' if win else '' %}
-{% set native = 'm2w64-' if win else '' %}
 
 package:
   name: r-corpcor
@@ -15,8 +14,7 @@ source:
 
 build:
   noarch: generic
-  merge_build_host: true  # [win]
-  number: 2
+  number: 3
   rpaths:
     - lib/R/lib/
     - lib/
